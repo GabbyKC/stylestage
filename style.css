@@ -178,7 +178,15 @@ main ul li::before {
     margin-right: 10px;
 }
 
-#files .container > a {
+main ol {
+    line-height: 2;
+}
+
+main ol li {
+    margin-bottom: .5rem;
+}
+
+#guidelines .container > a, #files .container > a {
     display: inline-block;
     background: var(--darkest-pink);
     color: var(--main-font);
