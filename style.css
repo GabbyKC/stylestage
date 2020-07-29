@@ -19,7 +19,7 @@
 /*general */
 body {
     font-family: 'Quicksand', sans-serif;
-    padding: 1rem;
+    padding: 0 .5rem;
     background: var(--bg-color);
     color: var(--main-font);
 }
@@ -159,8 +159,10 @@ main h2::before {
 
 main blockquote {
     border: 2px dashed var(--darkest-pink);
+    border-radius: var(--border-radius);
     padding: 1rem;
     margin: 0;
+    font-size: 1.25rem;
 }
 
 main ul {
@@ -195,6 +197,129 @@ main ol li {
     border-radius: var(--border-radius);
     margin-bottom: .75rem;
     margin-right: .5rem;
+}
+
+/*first aside */
+.profile {
+    background: var(--mid-pink);
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+    border: 2px dashed var(--main-font);
+    text-align: center;
+}
+
+#profile-title {
+    margin-top: 0;
+    text-shadow: 2px 2px 3px var(--darkest-pink);
+    letter-spacing: .25rem;
+}
+
+.profile ul {
+    list-style: none;
+    line-height: 2;
+    padding: 0;
+}
+
+.profile ul li span:first-of-type {
+    font-weight: bold;
+}
+
+.profile .container > a {
+    background: var(--main-font);
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: .25rem .5rem;
+    border-radius: var(--border-radius);
+    margin-top: .75rem;
+}
+
+/*second aside */
+#styles .container h2 {
+    position: relative;
+}
+
+#styles .container h2::before {
+    content: "";
+    background: var(--darkest-pink);
+    height: .25rem;
+    position: absolute;
+    width: 5rem;
+    top: -.25rem;
+    border-radius: var(--border-radius);
+}
+
+#styles ul {
+    list-style: none;
+    padding: 0;
+}
+
+#styles ul a {
+    font-weight: bold;
+    letter-spacing: .15rem;
+}
+
+#styles ul li {
+    background: linear-gradient(to right, #ffc4d0, #f7ddde, #fbe8e7);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+#styles ul li span {
+    display: flex;
+    flex-direction: column;
+}
+
+#styles .container > a {
+    display: flex;
+    justify-content: center;
+    background: var(--main-font);
+    padding: .5rem;
+    color: var(--mid-pink);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+    font-size: 1.25rem;
+}
+
+/*footer */
+.page-footer .container > p:nth-child(1) > a {
+    font-weight: bold;
+}
+
+.page-footer .container > p:nth-child(1) {
+    padding: .5rem 0;
+    text-align: right;
+}
+
+.page-footer ul {
+    list-style: none;
+    background: var(--main-font);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 2px dashed var(--darkest-pink);
+}
+
+.page-footer ul li {
+    padding: .75rem 1rem;
+    text-align: center;
+    background: var(--mid-pink);
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.page-footer ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.page-footer ul li > a {
+    text-decoration: none;
 }
 
 
