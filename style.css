@@ -317,6 +317,35 @@ main ol li {
     margin-bottom: 0;
 }
 
+/*hover effects*/
+header .container > a:hover {
+    background: var(--main-font);
+    color: var(--mid-pink);
+    transition: 0.5s;
+}
+
+nav ul li:hover {
+    background: var(--darkest-pink);
+    transition: 0.5s;
+}
+
+#guidelines .container > a:hover, #files .container > a:hover {
+    background: var(--main-font);
+    color: var(--darkest-pink);
+    transition: 0.5s;
+}
+
+.profile .container > a:hover {
+    background: var(--bg-color);
+    transition: 0.5s;
+}
+
+#styles .container > a:hover {
+    background: var(--darkest-pink);
+    color: var(--main-font);
+    transition: 0.5s;
+}
+
 /*media queries for tablet and above */
 @media (min-width: 700px) {
     body {
@@ -351,6 +380,10 @@ main ol li {
 
     nav ul {
         justify-content: space-between;
+    }
+
+    nav ul li > a {
+        padding: 1rem 1rem 0;
     }
 
     main ul {
@@ -444,6 +477,9 @@ main ol li {
     body {
         font-size: 1.15rem;
         width: 80%;
+        background: url("https://images.unsplash.com/photo-1589044730942-a647d52d75be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"), var(--bg-color);
+        background-blend-mode: multiply;
+        background-repeat: repeat-x;
     }
 
     h1 {
@@ -458,6 +494,7 @@ main ol li {
 
     header h2 {
         width: 50%;
+        opacity: .9;
     }
 
     nav ul li {
@@ -524,7 +561,7 @@ main ol li {
         padding: 1rem;
     }
 
-    #guidelines .container > a, #guidelines .container > a, #files .container > a  {
+    #guidelines .container > a, #files .container > a  {
         text-decoration: none;
         padding: .5rem 1rem;
         box-shadow: 2px 2px 3px var(--main-font);
