@@ -39,8 +39,9 @@ a {
 /*header */
 .skip-link {
     text-decoration: none;
-    color: white;
+    color: #626264;
     font-weight: bold;
+    font-size: var(--small-font);
     display: inline-block;
     background: var(--darkest-pink);
     padding: .5rem;
